@@ -1,7 +1,7 @@
 import Vue from "vue";
 import App from "./App";
 import router from "./router";
-import "../src/assets/icons/iconfont.css";
+import "@/assets/icons/iconfont.css";
 import "normalize.css";
 
 Vue.config.productionTip = false;

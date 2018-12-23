@@ -1,50 +1,53 @@
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
 html {
-	font-size: 10px;
+  font-size: 10px;
 }
 
-@media screen and (min-width:321px) and (max-width:374px) {
-	html {
-		font-size: 11px;
-	}
+@media screen and (min-width: 321px) and (max-width: 374px) {
+  html {
+    font-size: 11px;
+  }
 }
 
-@media screen and (min-width:375px) and (max-width:414px) {
-	html {
-		font-size: 12px;
-	}
+@media screen and (min-width: 375px) and (max-width: 414px) {
+  html {
+    font-size: 12px;
+  }
 }
 
-@media screen and (min-width:415px) and (max-width:639px) {
-	html {
-		font-size: 15px;
-	}
+@media screen and (min-width: 415px) and (max-width: 639px) {
+  html {
+    font-size: 15px;
+  }
 }
 
-@media screen and (min-width:640px) and (max-width:719px) {
-	html {
-		font-size: 20px;
-	}
+@media screen and (min-width: 640px) and (max-width: 719px) {
+  html {
+    font-size: 20px;
+  }
 }
 
-@media screen and (min-width:720px) and (max-width:749px) {
-	html {
-		font-size: 22.5px;
-	}
+@media screen and (min-width: 720px) and (max-width: 749px) {
+  html {
+    font-size: 22.5px;
+  }
 }
 
-@media screen and (min-width:750px) {
-	html {
-		font-size: 15px;
-	}
+@media screen and (min-width: 750px) {
+  html {
+    font-size: 15px;
+  }
 }
 
-$baseFontSize:11;
-$baseWidth:750;
+img {
+  vertical-align: middle;
+}
+
+$baseFontSize: 11;
+$baseWidth: 750;
+$commonPadding: 10;
 @function pxToRem($px) {
-	@return $px/12/2+rem;
+  @return $px/12/2 + rem;
 }
-
-
