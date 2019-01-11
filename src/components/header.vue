@@ -15,13 +15,12 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-@import "../assets/style/public.scss";
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: pxToRem($commonPadding);
-  background: #2d449f;
+  background: $mainColor;
   img {
     height: 36px;
     width: auto;

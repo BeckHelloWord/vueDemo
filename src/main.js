@@ -7,6 +7,7 @@ import "normalize.css";
 Vue.config.productionTip = false;
 
 const loginToken = localStorage.getItem("token");
+
 /* 全局路由导航 */
 router.beforeEach((to, from, next) => {
   if (
