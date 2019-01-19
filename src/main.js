@@ -6,10 +6,10 @@ import "normalize.css";
 
 Vue.config.productionTip = false;
 
-const loginToken = localStorage.getItem("token");
+// const loginToken = localStorage.getItem("token");
 
 /* 全局路由导航 */
-router.beforeEach((to, from, next) => {
+/* router.beforeEach((to, from, next) => {
   if (
     to.matched.some(res => {
       return res.meta.requiresAuth;
@@ -26,7 +26,7 @@ router.beforeEach((to, from, next) => {
   } else {
     next();
   }
-});
+}); */
 
 /* eslint-disable no-new */
 new Vue({

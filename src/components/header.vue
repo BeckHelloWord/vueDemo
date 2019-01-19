@@ -3,7 +3,7 @@
     <div>
       <img src="../assets/images/logo.png">
     </div>
-    <div class="login">登录</div>
+    <router-link to="/login" class="login">登录</router-link>
   </div>
 </template>
 

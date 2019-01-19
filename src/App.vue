@@ -18,6 +18,4 @@ export default {
 };
 </script>
 <style  scoped  lang="scss">
-// 全局引入通用scss
-@import "./assets/style/public.scss";
 </style>

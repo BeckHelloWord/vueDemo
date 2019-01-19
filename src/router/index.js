@@ -9,19 +9,19 @@ const routerList = [];
 function pushRouter(router, requiresAuth = false) {
   for (let key in router) {
     /* 为member文件中路由添加登录标识 */
-    if (requiresAuth) {
+/*     if (requiresAuth) {
       router[key].meta
         ? (router[key].meta.requiresAuth = true)
         : (router[key].meta = {
             requiresAuth: trues
           });
-    }
+    } */
 
     routerList.push(router[key]);
   }
 }
 
-pushRouter(needLogin, true);
+pushRouter(needLogin);
 pushRouter(visitor);
 
 Vue.use(Router);
