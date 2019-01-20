@@ -8,12 +8,12 @@ export default [
   },
   {
     path: "/index",
-    // component: reslove => require(["../views/index/index"], reslove)
+    name:index,
     component:index
   },
   {
     path: "/login",
-    // component: reslove => require(["../views/login/login"], reslove),
+    name:login,
     component: login
   }
 ];
