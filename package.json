@@ -5,11 +5,11 @@
   "author": "BeckHelloWord <444870506@qq.com>",
   "private": true,
   "scripts": {
-    "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
+    "dev": "webpack-dev-server --inline --progress --config  build/webpack.dev.conf.js",
     "start": "npm run dev",
     "e2e": "node test/e2e/runner.js",
     "test": "npm run e2e",
-    "build": "node build/build.js"
+    "build": "cross-env  npm_config_report=true node build/build.js"
   },
   "dependencies": {
     "vue": "^2.5.2",
@@ -30,6 +30,7 @@
     "chromedriver": "^2.27.2",
     "compression-webpack-plugin": "^1.1.11",
     "copy-webpack-plugin": "^4.0.1",
+    "cross-env": "^5.2.0",
     "cross-spawn": "^5.0.1",
     "css-loader": "^0.28.0",
     "extract-text-webpack-plugin": "^3.0.0",
@@ -58,7 +59,7 @@
     "vue-style-loader": "^3.0.1",
     "vue-template-compiler": "^2.5.2",
     "webpack": "^3.6.0",
-    "webpack-bundle-analyzer": "^2.9.0",
+    "webpack-bundle-analyzer": "^2.13.1",
     "webpack-dev-server": "^2.9.1",
     "webpack-merge": "^4.1.0"
   },

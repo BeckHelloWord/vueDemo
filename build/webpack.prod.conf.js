@@ -123,6 +123,7 @@ const webpackConfig = merge(baseWebpackConfig, {
   ]
 })
 
+//开启gzip
 if (config.build.productionGzip) {
   const CompressionWebpackPlugin = require('compression-webpack-plugin')
 
@@ -141,6 +142,7 @@ if (config.build.productionGzip) {
   )
 }
 
+//webpack打包结果可视化
 if (config.build.bundleAnalyzerReport) {
   const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin
   webpackConfig.plugins.push(new BundleAnalyzerPlugin())
